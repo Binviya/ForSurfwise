@@ -10,7 +10,10 @@ def greet(name: str) -> str:
 
 
 def fib(n: int) -> list[int]:
-    """Return the first n Fibonacci numbers."""
+    """Return the first n Fibonacci numbers.
+
+    Non-positive n yields an empty list; negative input is not an error.
+    """
     if n <= 0:
         return []
     seq = [0]
